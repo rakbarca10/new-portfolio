@@ -19,6 +19,28 @@
         });
     });
 
+    // Set active on scroll too
+    window.addEventListener('scroll', function () {
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+        let current = '';
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100; // Adjust offset if navbar height changes
+            if (pageYOffset >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
+        });
+    });
+
     // Back to top button
     document.querySelector('.back-to-top').addEventListener('click', function (e) {
         e.preventDefault();

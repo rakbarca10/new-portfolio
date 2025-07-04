@@ -43,11 +43,19 @@
     </div>
     <!-- Spinner End -->
 
+    <!-- Whatsapp -->
+    <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-fc40ab2f-6e1f-4eb1-8b5d-cd9e5f06746f" data-elfsight-app-lazy></div>
+
+
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm py-lg-0 px-4 px-lg-5">
+
         <a href="#home" class="navbar-brand">
-            <h1 class="text-primary fw-bold m-0">Rakshith</h1>
+            <img src="img/logo.jpeg" alt="Logo" class="navbar-logo">
         </a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -56,18 +64,20 @@
                 <a href="#home" class="nav-item nav-link active">Home</a>
                 <a href="#resume" class="nav-item nav-link">About</a>
                 <a href="#skills" class="nav-item nav-link">Skills</a>
-                <a href="#service" class="nav-item nav-link">Freelance Services</a>
+                <a href="#ventures" class="nav-item nav-link">Ventures</a>
+                <a href="#service" class="nav-item nav-link">Services</a>
                 <a href="#project" class="nav-item nav-link">Volunteering</a>
                 <a href="#team" class="nav-item nav-link">Achievements</a>
                 <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
+                <a href="https://www.rakshithblogsforfun.in/" class="nav-item nav-link">Blogs</a>
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
 
     <!-- Header Start -->
-    <div class="container-fluid mt-0" id="home">
+    <section class="container-fluid mt-0" id="home">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 hero-text py-5">
@@ -89,11 +99,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Header End -->
 
     <!-- Info box starts -->
-    <div class="container position-relative z-3">
+    <section class="container position-relative z-3">
         <div class="info-box d-flex flex-wrap justify-content-between align-items-center shadow">
             <div class="info-item d-flex align-items-start">
                 <h2 class="number me-3">4+</h2>
@@ -117,7 +127,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Info box ends -->
 
     <!-- Resume sect begins -->
@@ -126,6 +136,7 @@
             <!-- Experience Section -->
             <div class="resume-column">
                 <h2 class="section-title"><i class="icon" title="Experience">👨‍💻</i> My Experience</h2>
+
                 <div class="resume-card">
                     <span class="year">July, 2023 - Present</span>
                     <h3>Director</h3>
@@ -184,6 +195,16 @@
                 </div>
             </div>
         </div>
+
+        <div class="resume-download">
+            <a href="assets/Anshika_Agarwal_Resume.pdf" download class="download-btn" target="_blank">
+                <i class="fas fa-download"></i> Resume
+            </a>
+            <a href="work_sample.html" class="download-btn" style="margin-left: 15px;">
+                See my work
+            </a>
+        </div>
+
     </section>
     <!-- Resume ends -->
 
@@ -248,8 +269,53 @@
     </section>
     <!-- Skills Section End -->
 
+    <section id="ventures" class="ventures-section py-5">
+        <div class="container text-center">
+            <h2 class="section-title mb-3">My Ventures</h2>
+            <p class="section-subtitle mb-5">
+                Explore the platforms I've built with passion and purpose.
+            </p>
+            <div class="row justify-content-center g-4">
+                <!-- NGO Card -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="venture-card">
+                        <div class="venture-image-container">
+                            <img src="img/blog1.jpg" alt="NGO Website" class="venture-image" />
+                        </div>
+                        <div class="venture-content p-4">
+                            <h4 class="venture-name">NavriseUp India Care Foundation</h4>
+                            <p class="venture-desc">
+                                A non-profit initiative focused on education, healthcare, and community empowerment
+                                across India.
+                            </p>
+                            <a href="https://navriseupindiacare.org/" target="_blank" class="venture-btn">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Freelancing Agency Card -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="venture-card">
+                        <div class="venture-image-container">
+                            <img src="img/freelance.png" alt="Freelancing Website Coming Soon" class="venture-image" />
+                        </div>
+                        <div class="venture-content p-4">
+                            <h4 class="venture-name">The Content Co</h4>
+                            <p class="venture-desc">
+                                Our dedicated freelance platform is under construction.<br />
+                                Empowering creators, coders, designers and doers — launching soon!
+                            </p>
+                            <a href="coming-soon.html" target="_blank" class="venture-btn">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Service Start -->
-    <div class="container-fluid w-100 py-3" id="service" style="background-color: #f2f0f8;">
+    <section class="container-fluid w-100 py-3" id="service" style="background-color: #f2f0f8;">
         <div class="container">
             <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
@@ -310,11 +376,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Service End -->
 
+
     <!-- Volunteering Starts -->
-    <div class="w-100 py-6 pt-5" id="project">
+    <section class="w-100 py-6 pt-5" id="project">
         <div class="container">
             <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
@@ -332,11 +399,11 @@
 
             <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
                 <!-- Volunteer Box 1 -->
-                <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="col-lg-3 col-md-6 portfolio-item first">
                     <div class="volunteer-box">
                         <img src="img/Final logo with text.png" alt="Navrise Up" class="volunteer-img">
                         <div class="details">
-                            <p class="name">Navrise Up India Care Foundation</p>
+                            <p class="name">NavriseUp India Care</p>
                             <div class="actions">
                                 <a href="img/Final logo with text.png" data-lightbox="portfolio" class="icon"><i
                                         class="fa fa-eye"></i></a>
@@ -348,7 +415,7 @@
                 </div>
 
                 <!-- Volunteer Box 2 -->
-                <div class="col-lg-4 col-md-6 portfolio-item second">
+                <div class="col-lg-3 col-md-6 portfolio-item second">
                     <div class="volunteer-box">
                         <img src="img/ratna.png" alt="Ratna Nidhi" class="volunteer-img">
                         <div class="details">
@@ -363,7 +430,7 @@
                 </div>
 
                 <!-- Volunteer Box 3 -->
-                <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="col-lg-3 col-md-6 portfolio-item first">
                     <div class="volunteer-box">
                         <img src="img/Ketto.png" alt="Ketto" class="volunteer-img">
                         <div class="details">
@@ -378,7 +445,7 @@
                 </div>
 
                 <!-- Volunteer Box 4 -->
-                <div class="col-lg-4 col-md-6 portfolio-item second">
+                <div class="col-lg-3 col-md-6 portfolio-item second">
                     <div class="volunteer-box">
                         <img src="img/better world.png" alt="Better World" class="volunteer-img">
                         <div class="details">
@@ -394,7 +461,7 @@
                 </div>
 
                 <!-- Volunteer Box 5 -->
-                <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="col-lg-3 col-md-6 portfolio-item first">
                     <div class="volunteer-box">
                         <img src="img/womentech.png" alt="Women Tech Network" class="volunteer-img">
                         <div class="details">
@@ -410,7 +477,7 @@
                 </div>
 
                 <!-- Volunteer Box 6 -->
-                <div class="col-lg-4 col-md-6 portfolio-item second">
+                <div class="col-lg-3 col-md-6 portfolio-item second">
                     <div class="volunteer-box">
                         <img src="img/wyc.png" alt="World Youth Council" class="volunteer-img">
                         <div class="details">
@@ -426,7 +493,7 @@
                 </div>
 
                 <!-- Volunteer Box 7 -->
-                <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="col-lg-3 col-md-6 portfolio-item first">
                     <div class="volunteer-box">
                         <img src="img/peta.png" alt="PETA India" class="volunteer-img">
                         <div class="details">
@@ -441,11 +508,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Volunteering Ends -->
 
     <!-- Notable Achievements Start -->
-    <div class="w-100 py-6 pb-5" id="team">
+    <section class="w-100 py-6 pb-5" id="team">
 
         <div class="container">
             <div class="row mb-5">
@@ -487,11 +554,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Notable Achievements End -->
 
     <!-- Testimonial Start -->
-    <div class="container-fluid w-95 py-5" id="testimonial" style="background-color: #ffffff;">
+    <section class="container-fluid w-95 py-5" id="testimonial" style="background-color: #ffffff;">
 
         <div class="container-fluid py-5">
             <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Testimonial</h1>
@@ -562,11 +629,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Testimonial End -->
 
     <!-- Contact Start -->
-    <div class="container-xxl pb-5" id="contact">
+    <section class="container-xxl pb-5" id="contact">
         <!-- Contact Section Start -->
         <section class="contact-section w-100 py-5" id="contact">
             <div class="container">
@@ -606,7 +673,7 @@
         <div data-aidaform-widget="form-2019-12" data-url="https://rakshith.aidaform.com/contact-info-ngo"
             data-width="100%" data-height="500px" data-do-resize></div>
         <script>(function () { var r, d = document, gt = d.getElementById, cr = d.createElement, tg = d.getElementsByTagName, id = "aidaform-embed"; if (!gt.call(d, id)) { r = cr.call(d, "script"); r.id = id; r.src = "https://embed.aidaform.com/embed.js"; (d.head || tg.call(d, "head")[0]).appendChild(r); } })()</script>
-    </div>
+    </section>
 
     <footer class="footer" id="footer">
         <div class="footer-content">
@@ -630,8 +697,8 @@
                     <p>communitymanagerrakshith@gmail.com</p>
                 </div>
                 <div class="footer-box">
-                    <i class="fas fa-link icon"></i>
-                    <p><a href="https://navriseupindiacare.org/" target="_blank">NavriseUp India Care Foundation</a></p>
+                    <i class="fas fa-phone-alt icon"></i>
+                    <p>+91 93263 38727</p>
                 </div>
 
             </div>

@@ -13,8 +13,8 @@
 .back-to-top {
     position: fixed;
     display: none;
-    right: 45px;
-    bottom: 45px;
+    left: 45px;
+    bottom: 22px;
     z-index: 99;
 }
 
@@ -46,6 +46,24 @@
     opacity: 1;
 }
 
+/* Whatsapp widget responsiveness */
+.elfsight-app-8eef5ff3-8280-4b10-a0cd-810ec58eb551 {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    z-index: 999;
+    max-width: 100%; /* Ensure widget doesn't exceed screen width */
+    overflow: hidden; /* Prevent any overflow */
+}
+
+/* Responsive adjustment for WhatsApp widget */
+@media (max-width: 400px) {
+    .elfsight-app-8eef5ff3-8280-4b10-a0cd-810ec58eb551 {
+        bottom: 50px;
+        right: 15px;
+        max-width: 95%; /* Adjust for smaller screens */
+    }
+}
 
 /*** Button ***/
 .btn {
@@ -97,6 +115,14 @@
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
     color: var(--primary);
+}
+
+.navbar-logo {
+  height: 50px;           /* Adjust as per your logo’s design */
+  width: auto;            /* Maintains aspect ratio */
+  object-fit: contain;    /* Ensures no distortion */
+  border-radius: 8px;     /* Optional: smooth rounded edges */
+  transition: transform 0.3s ease;
 }
 
 @media (max-width: 991.98px) {
@@ -334,10 +360,8 @@ body {
     padding: 1rem 1.2rem;
     margin-bottom: 1rem;
     box-shadow: 0 8px 20px rgba(124, 58, 237, 0.08);
-    /* Soft purple shadow */
     transition: transform 0.3s ease;
     border-left: 4px solid #7c3aed;
-    /* Purple edge highlight */
 }
 
 .resume-card:hover {
@@ -347,7 +371,6 @@ body {
 .resume-card .year {
     font-size: 0.9rem;
     color: #7c3aed;
-    /* Purple year */
     font-weight: 600;
     display: block;
     margin-bottom: 0.5rem;
@@ -363,11 +386,9 @@ body {
 .resume-card p {
     margin: 0;
     color: #6b7280;
-    /* Subtext gray */
     font-size: 0.95rem;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .resume-container {
         flex-direction: column;
@@ -378,6 +399,27 @@ body {
     }
 }
 
+.resume-download {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #7c3aed;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.2);
+}
+
+.download-btn:hover {
+    background-color: #5b21b6;
+    color: white;
+}
 
 
 /*** Skills ***/
@@ -459,6 +501,76 @@ body {
     margin-top: 8px;
 }
 
+/*** Ventures***/
+/*** Ventures ***/
+/* Section background and typography */
+.ventures-section {
+  background-color: #f3f6fd; /* light lavender-blue */
+  color: var(--dark);
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #666;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Venture Card */
+.venture-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.venture-card:hover {
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+.venture-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.venture-image {
+  width: auto;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.venture-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+
+.venture-desc {
+  font-size: 0.95rem;
+  color: #555;
+  min-height: 60px;
+  margin-bottom: 20px;
+}
+
+.venture-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.venture-btn:hover {
+  background-color: var(--primary);
+  color: #fff;
+  transform: translateY(-2px);
+}
 
 /*** Service ***/
 .service-item .bg-icon {
