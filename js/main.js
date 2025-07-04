@@ -19,6 +19,21 @@
         });
     });
 
+    // toggle hamburger
+    document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+    const navbarCollapse = document.getElementById("navbarCollapse");
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+          toggle: false
+        });
+        bsCollapse.hide();
+      });
+    });
+  });
+
     // Set active on scroll too
     window.addEventListener('scroll', function () {
         const sections = document.querySelectorAll('section[id]');
