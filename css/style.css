@@ -913,6 +913,11 @@ body {
     font-size: 1rem;
   }
 }
+@media (max-width: 468px) {
+    .contact-box .mail-addr{
+        font-size: 0.8rem;
+    }
+}
 
 /* **Footer** */
 .footer {
