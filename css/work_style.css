@@ -15,10 +15,11 @@
 }
 
 html {
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   /* overflow: hidden; */
@@ -156,14 +157,19 @@ body {
 }
 
 /**** WORK SECTION ****/
-#work, #product-section, #marketing-section, #strategy {
+#work,
+#product-section,
+#marketing-section,
+#strategy {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem 2rem;
 }
 
-.work-container, .product-container, .strategy-container {
+.work-container,
+.product-container,
+.strategy-container {
   max-width: 1200px;
 }
 
@@ -253,6 +259,7 @@ h2 {
 .card-content a:hover {
   color: #ccc;
 }
+
 /* Mobile Responsive Work Section */
 @media screen and (max-width: 1024px) {
   .gallery-work {
@@ -455,7 +462,7 @@ h2 {
   border: 1px solid #ddd;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -464,7 +471,7 @@ h2 {
 }
 
 .project-inside:hover {
-  box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
 }
 
 .project-inside img {
@@ -526,13 +533,9 @@ h2 {
   }
 
   .product-works {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-  .product-container h2 {
-    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 
   .article-title {
@@ -568,11 +571,13 @@ h2 {
   margin-bottom: 5rem;
   background-color: #fff;
 }
+
 .strategy-works:has(.strategy-card:nth-child(2):last-child),
 .strategy-works:has(.strategy-card:nth-child(1):last-child) {
   width: 100%;
   justify-content: flex-start;
 }
+
 .strategy-card {
   flex: 0 1 calc(33.333% - 20px);
   background-color: #f9f9f9;
